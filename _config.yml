@@ -28,8 +28,8 @@ canonical: true
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: /
-  #categories: /categories
+  monkey: http://www.dszf.com.au
+  categories: /categories
   #about: /about
   archives: /archives
   tags: /tags
@@ -44,7 +44,7 @@ menu:
 menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
+  monkey: home
   about: user
   categories: th
   tags: tags
@@ -59,9 +59,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+# scheme: Muse
+scheme: Mist
+# scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -120,7 +120,9 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
+  微博: http://www.weibo.com/u/6006095231
+  知乎: http://zhihu.com/people/spingptyltd
   #LinkLabel: Link
 
 
@@ -141,7 +143,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /uploads/avatar.png
 
 
 # Table Of Contents in the Sidebar
@@ -216,10 +218,14 @@ auto_excerpt:
 
 
 # Wechat Subscriber
-#wechat_subscriber:
-  #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
+wechat_subscriber:
+  enabled: true
+  qcode: /uploads/wechat-qrcode.jpg
+  description: 欢迎您扫一扫上面的微信公众号，订阅我们！
+
+reward_comment: 坚持分享住房方面知识，您的支持将鼓励我们继续创作！
+wechatpay: /uploads/wechat-pay.jpg
+alipay: /uploads/alipay.jpg
 
 
 
@@ -238,10 +244,10 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: c9794e90b416d3f709bc1ab78bc8cafe
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: dszf
 
 # Disqus
 #disqus_shortname:
@@ -253,11 +259,11 @@ mathjax:
 ##  type: button
 
 # Share
-#jiathis:
+# jiathis: true
 #add_this_id:
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -265,10 +271,14 @@ mathjax:
 
 
 # Google Analytics
-#google_analytics:
+google_analytics: 81637677-3
 
 # CNZZ count
 #cnzz_siteid:
+
+search:
+  path: search.xml
+  field: post
 
 
 # Make duoshuo show UA
@@ -303,9 +313,9 @@ facebook_comments_plugin:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: VRYrsqE9W32RQG8bs9TU22zf-gzGzoHsz
+  app_key: IMPjfGIiqC3zvhpMsJt7uIne
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
