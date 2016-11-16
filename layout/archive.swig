@@ -38,9 +38,9 @@
         </div>
       {% endif %}
       {# endshow #}
-
+      {% if post.visible !== 'hide' %}
       {{ post_template.render(post) }}
-
+      {% endif %}
     {% endfor %}
 
   </section>
